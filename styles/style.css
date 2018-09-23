@@ -38,10 +38,6 @@ a {
 
 /* ---- Layout Containers ---- */
 
-.container {
-	
-}
-
 .main-header {
 	
 }
@@ -55,5 +51,15 @@ a {
 ==================================== */
 
 @media (min-width: 769px) {
+
+  .wrap {
+    min-height: calc(100vh-24px); /* to force the footer to the bottom vh is a viewport relative unit. Using calc to do the calculation of the 89px of our footer*/
+  }
+
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
 }
